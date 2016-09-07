@@ -1,0 +1,10 @@
+# App artifacts
+/_build
+/db
+/deps
+/dist
+/*.ez
+/rel/element43_orders
+
+# Generated on crash by the VM
+erl_crash.dump
