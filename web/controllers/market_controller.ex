@@ -52,7 +52,7 @@ defmodule Element43.Orders.MarketController do
   end
 
   defp get_or_store_type_cache(type_id) do
-    ConCache.get_or_store(:region, type_id, fn() ->
+    ConCache.get_or_store(:type, type_id, fn() ->
       result = db(@db)
       |> table("markets")
       |> get_all(type_id, index: "typeID")
