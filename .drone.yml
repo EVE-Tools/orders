@@ -10,6 +10,7 @@ pipeline:
       - find rel -name "*.tar.gz" -exec tar -xvzf {} --directory=dist \;
 
   docker:
+    image: plugins/docker
     repo: evetools/orders
     tag:
       - latest
