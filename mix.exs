@@ -3,7 +3,7 @@ defmodule Element43.Orders.Mixfile do
 
   def project do
     [app: :element43_orders,
-     version: "0.0.2",
+     version: "0.0.3",
      elixir: "~> 1.2",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -34,7 +34,7 @@ defmodule Element43.Orders.Mixfile do
      {:phoenix_pubsub, "~> 1.0"},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:elixir_nsq, github: "wistia/elixir_nsq"},
+     {:elixir_nsq, github: "wistia/elixir_nsq", ref: "5934956"},
      {:rethinkdb, "~> 0.4"},
      {:jiffy, "~> 0.14"},
      {:cors_plug, "~> 1.1"},

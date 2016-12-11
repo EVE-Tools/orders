@@ -37,7 +37,6 @@ defmodule Element43.Orders do
 
       worker(RethinkConnection, [rethink_config], restart: :permanent),
       worker(Bootstrap, []),
-      worker(OrderStore, [], restart: :permanent),
       worker(NSQClient, [], restart: :permanent),
     ]
 
